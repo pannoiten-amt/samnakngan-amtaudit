@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samnakngan-amtaudit.com/sitemap.xml
