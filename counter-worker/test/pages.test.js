@@ -31,7 +31,7 @@ test("every page has the GA snippet and a hidden counter hook", () => {
   }
 });
 
-test("counter config is still the placeholder", () => {
+test("counter config points at the deployed Worker", () => {
   const js = readFileSync(join(repoRoot, "assets/visitor-counter.js"), "utf8");
-  assert.match(js, /var AMT_VISITOR_COUNTER_ENDPOINT = "AMT_VISITOR_COUNTER_ENDPOINT_PLACEHOLDER";/);
+  assert.match(js, /var AMT_VISITOR_COUNTER_ENDPOINT = "https:\/\/amt-visitor-counter\.pannoi-ten\.workers\.dev";/);
 });

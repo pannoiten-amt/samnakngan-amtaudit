@@ -4,7 +4,7 @@
  * to keep the footer badge hidden.
  * Example: "https://amt-visitor-counter.<account>.workers.dev"
  */
-var AMT_VISITOR_COUNTER_ENDPOINT = "AMT_VISITOR_COUNTER_ENDPOINT_PLACEHOLDER";
+var AMT_VISITOR_COUNTER_ENDPOINT = "https://amt-visitor-counter.pannoi-ten.workers.dev";
 
 (function () {
   var STORAGE_KEY = "amt_visitor_id";
