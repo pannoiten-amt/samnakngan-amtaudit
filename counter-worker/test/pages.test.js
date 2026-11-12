@@ -46,7 +46,7 @@ test("article pages show a byline and three related links, and JSON-LD parses", 
       return false;
     }
   });
-  assert.equal(articles.length, 13);
+  assert.equal(articles.length, 14);
   for (const name of articles) {
     const html = readFileSync(join(dir, name, "index.html"), "utf8");
     assert.match(html, /<p class="byline">เขียนโดย <a href="\/team\/">/, name);
